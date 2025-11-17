@@ -1,0 +1,32 @@
+class Vehicle {
+    String brand;
+    void drive() {
+        System.out.println("Vehicle is moving");
+    }
+}
+
+class Car extends Vehicle {
+    void carFeature() {
+        System.out.println("Car Feature");
+    }
+}
+
+class Bike extends Vehicle {
+    void bikeFeature() {
+        System.out.println("Bike Feature");
+    }
+}
+
+class VehicleTest {
+    public static void main(String[] args) {
+        Car c = new Car();
+        c.brand = "BMW";
+        c.drive();
+        c.carFeature();
+
+        Bike b = new Bike();
+        b.brand = "Yamaha";
+        b.drive();
+        b.bikeFeature();
+    }
+}
